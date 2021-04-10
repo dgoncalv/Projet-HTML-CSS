@@ -1,0 +1,104 @@
+body {
+	margin: 0px;
+	background: linear-gradient(#8D99AE, 50%, #2B2D42);
+}
+
+#contenue {
+	background-color: #DEE3E5;
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+section {
+	margin: 20px;
+	font-size: 1.4em;
+}
+
+/* Image + Titre */
+
+figure {
+	position: relative;
+	padding: 0px;
+}
+
+figure img{
+	width: 100%;
+	padding: 0px;
+}
+
+figcaption {
+	position: absolute;
+	left: 0; 
+  	right: 0;
+  	bottom: 0px;
+  	margin-left: auto; 
+ 	margin-right: auto; 
+ 	width: 50%;
+	font-size: 6vw;
+	text-align: center;
+	background-color: #DEE3E5;
+	border-radius: 15px 15px 0px 0px;
+}
+
+/* Les 3 boxs */
+
+#box {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
+#box article {
+	border: 2px grey solid;
+	border-radius: 5px;
+	width: 25%;
+	min-height: 200px;
+	background-color: #e2e7e9;
+}
+
+#box article div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 87%;
+	margin: 0px;
+}
+
+#box article h2 {
+	margin: 0px;
+	background-color: #c6cfd2;
+}
+
+#box article i {
+	padding-right: 10px;
+}
+
+section h2 {
+	background-color: #c6cfd2;
+}
+
+#presentation p {
+	text-indent: 2em;
+}
+
+#missions {
+	font-size: 1.4em;
+}
+
+#missions ul li {
+	padding-top: 15px;
+	list-style: none;
+}
+#missions ul i {
+	margin-right: 10px;
+}
+
+#compétences i{
+	margin-right: 10px;
+}
+#compétences li {
+	list-style: none;
+	margin-bottom: 10px;
+}

@@ -1,0 +1,380 @@
+body {
+    --color1: 241;
+    --color2: 241;
+    --color3: 241;
+    margin: 0px;
+	background: linear-gradient(#8D99AE, 50%, #2B2D42);
+}
+
+#page {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin: auto;
+	background-color: #DEE3E5;
+}
+
+        /* Hover */
+.navigationButton:hover {
+    background-color: rgb(3, 44, 3);
+}
+.researchBar:hover {
+    background-color: rgb(3, 44, 3);
+}
+    /* ID */
+#logo {
+    height: 70px;
+    width: 110px;
+}
+
+/* Titre */
+
+#title {
+    position: relative;
+	margin: auto;
+	margin-top: 50px;
+	width: 70%;
+	height: 40%;
+	justify-content: center;
+}
+#title img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+#title h1 {
+    position: absolute;
+    background-color: rgba(var(--color1), var(--color2), var(--color3), 0.808);
+    z-index: 1;
+    bottom: 50%;
+    margin: auto;
+    font-size: 3em;
+    max-width: 40%;
+    max-height: 30%;
+    left: -10%;
+    border-radius: 20px;
+}
+#title:hover {
+    animation-name: Title;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+/* Contenu */ 
+
+#contenue {
+	display: flex;
+	flex-direction: column;
+    margin: 10%;
+}
+
+section article {
+	display: flex;
+	align-items: flex-end;
+	flex-direction: row;
+	margin-bottom: 100px;
+}
+
+/* Affichage des blocs impairs */
+
+.contenue1 div {
+	position: relative;
+	width: 300%;
+}
+.contenue1 img {
+	height: 100%;
+	width: 100%;
+	border-radius: 70px;
+}
+
+.contenue1 h2 {
+	position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 35%;
+    margin: 0px;
+    width: 40%;
+    max-width: 300px;
+	font-size: 1.5em;
+	border-radius: 10px;
+    box-sizing: border-box;
+    background-color: rgba(var(--color1), var(--color2), var(--color3), 0.808);
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.contenue1 p {
+	position: relative;
+	background-color: #5E78A9;
+	height: 50%;
+	width: 300%;
+	padding: 10px;
+	border-radius: 30px;
+	right: 100px;
+	overflow: hidden;
+}
+
+.contenue1 p a {
+	position: relative;
+	background-color: green;
+	border: 1px black solid;
+	bottom: 0px;
+	right: 0px;
+}
+
+/* Affichage des contenue pair */
+
+.contenue2 {
+	display: flex;
+}
+
+.contenue2 div {
+	position: relative;
+	width: 300%;
+	order: 2;
+}
+.contenue2 img {
+	height: 100%;
+	width: 100%;
+	border-radius: 70px;
+}
+
+.contenue2 h2 {
+	position: absolute;
+    z-index: 1;
+    top: 40%;
+	left: 35%;
+	border-radius: 10px;	
+    margin: 0px;
+    width: 40%;
+    max-width: 300px;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    background-color: rgba(var(--color1), var(--color2), var(--color3), 0.808);
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.contenue2 p {
+	position: relative;
+	background-color: #5E78A9;
+	height: 50%;
+	width: 300%;
+	padding: 10px;
+	border-radius: 30px;
+	left: 100px;
+	overflow: hidden;
+	order: 1;
+}
+
+.contenue2 p a {
+	position: relative;
+	background-color: green;
+	border: 1px black solid;
+	bottom: 0px;
+	right: 0px;
+}
+
+/* Hover pour animation */
+
+	/* Animation contenue impair */
+
+.contenue1:hover {
+	background: linear-gradient(90deg ,#4d638b, 40%, #7b90b8);
+	animation-name: Contenue1;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+}
+
+.contenue1:hover p{
+	animation-name: Contenue1Text;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+}
+.contenue1:hover img{
+	animation-name: Contenue1img;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+}
+	/* Animation contenue pair */
+
+.contenue2:hover {
+	background: linear-gradient(-90deg ,#4d638b, 40%, #7b90b8);
+	animation-name: Contenue2;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+}
+
+.contenue2:hover p{
+	animation-name: Contenue2Text;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+}
+.contenue2:hover img{
+	animation-name: Contenue2img;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+}
+
+/* Footer */
+
+footer {
+    background-color: violet;
+}
+
+/* Keyframes */
+
+	/* Keyframes pour le Titre */
+
+	/* Keyframes pour les contenues impair */
+
+@keyframes Contenue1{
+	0% {
+		transform: scale(1);
+		border-radius: 150px;
+	}
+	100% {
+		box-shadow: 5px 5px 60px rgb(103, 110, 122);
+		transform: scale(1.05);
+		border-radius: 25px;
+
+	}
+}
+@keyframes Contenue1Text{
+	100% {
+		right: 200px;
+		background-color: #C6DAFE;
+	}
+}
+@keyframes Contenue1img{
+	100% {
+		transform: scale(1.1);
+		border-radius: 20px;
+		background-color: red;
+	}
+}
+
+	/* Keyframes pour les contenues pair */
+
+@keyframes Contenue2{
+	0% {
+		transform: scale(1);
+		border-radius: 150px;
+	}
+	100% {
+		box-shadow: 5px 5px 60px rgb(103, 110, 122);
+		transform: scale(1.05);
+		border-radius: 25px;
+	}
+}
+@keyframes Contenue2Text{
+	100% {
+		left: 200px;
+		background-color: #C6DAFE;
+	}
+}
+@keyframes Contenue2img{
+	100% {
+		transform: scale(1.1);
+		border-radius: 20px;
+		background-color: red;
+	}
+}
+
+
+
+
+/* Menu */
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #475C7A;
+    position: sticky;
+    top: 0px;
+    justify-content: space-around;
+}
+
+.logo{
+    width: 8px;
+    float: left;
+}
+
+.menu{
+    float: center;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: palevioletred;
+    border-bottom: 2px solid gold;
+}
+
+.sous{ /* me truc qui deroule*/
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: bisque;
+    position: absolute;
+    position: relative;
+    width: 100%;
+    z-index: 999;
+}
+
+nav > ul li:hover .sous{
+    display: block;
+}
+
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous a:hover{
+    border-bottom: none;
+    background-color: black;
+}
+
+.deroulant > a::after{
+    content: " ▼";
+    font-size: 12px;
+}
+
+.conteneur{
+    margin: 50px 20 px;
+    height: 1500px;
+}
+
+img{
+    padding: 10px;
+}

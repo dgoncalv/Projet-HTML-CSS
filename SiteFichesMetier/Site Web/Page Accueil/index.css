@@ -1,0 +1,105 @@
+body {
+    --color1: 241;
+    --color2: 241;
+    --color3: 241;
+    margin: 0px;
+    background-color: rgb(var(--color1), var(--color2), var(--color3));
+}
+
+/* Header */
+
+nav {
+    display: flex;
+    background-color: blue;
+    justify-content: space-around;
+}
+    /* Class */
+.navigationButton {
+    background-color: red;
+    width: 100%;
+    text-align: center;
+}
+
+        /* Hover */
+.navigationButton:hover {
+    background-color: rgb(3, 44, 3);
+}
+.researchBar:hover {
+    background-color: rgb(3, 44, 3);
+}
+    /* ID */
+#logo {
+    height: 70px;
+    width: 110px;
+}
+
+/* Titre */
+
+#title {
+    display: flex;
+    margin: 10%;
+    justify-content: center;
+}
+#title img {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    max-height: 600px;
+    height: 50%;
+    right: 10%;
+}
+#title h1 {
+    position: relative;
+    background-color: rgba(var(--color1), var(--color2), var(--color3), 0.808);
+    height: 100%;
+    left: 10%;
+    width: 75%;
+    margin-top: 8%;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 300%;
+}
+
+/* Contenu */ 
+
+#contenue {
+    background-color: red;
+    margin: 10%;
+}
+#contenue article {
+    display: flex;
+    margin-bottom: 10%;
+}
+/*#contenue img {
+    width: 40%;
+    height: 40%;
+}*/
+#contenue h2 {
+    z-index: 1;
+    height: 5%;
+}
+.image {
+    display: flex;
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+.image h2 {
+    position: absolute;
+    background-color: rgba(var(--color1), var(--color2), var(--color3), 0.808);
+    font-size: 200%;
+}
+
+/* Footer */
+
+footer {
+    background-color: violet;
+}
